@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "pt.upt.dam.gotime"
+    namespace = "pt.uptomar.dam2026.gotime"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "pt.upt.dam.gotime"
+        applicationId = "pt.uptomar.dam2026.gotime"
         minSdk = 26
         targetSdk = 37
         versionCode = 1
