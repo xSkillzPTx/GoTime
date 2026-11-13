@@ -1,4 +1,4 @@
-package pt.upt.dam.gotime.ui.theme
+package pt.uptomar.dam2026.gotime.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

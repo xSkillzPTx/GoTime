@@ -1,4 +1,4 @@
-package pt.upt.dam.gotime
+package pt.uptomar.dam2026.gotime
 
 import org.junit.Test
 

@@ -1,6 +1,5 @@
-package pt.upt.dam.gotime.ui.theme
+package pt.uptomar.dam2026.gotime.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
