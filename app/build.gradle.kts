@@ -37,6 +37,7 @@ android {
 }
 
 dependencies {
+      implementation("androidx.credentials:credentials:1.7.0-alpha03")
     implementation("androidx.navigation:navigation-compose:2.10.2")
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.activity.compose)

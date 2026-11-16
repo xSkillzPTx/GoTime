@@ -18,6 +18,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import pt.uptomar.dam2026.gotime.R
+import pt.uptomar.dam2026.gotime.ui.auth.loginScreen
 import pt.uptomar.dam2026.gotime.ui.home.homeScreen
 import pt.uptomar.dam2026.gotime.ui.profile.profileScreen
 
@@ -56,6 +57,7 @@ fun goTimeNavigation(modifier: Modifier = Modifier) {
     ) {
       composable(Destination.HOME.route) { homeScreen() }
       composable(Destination.PROFILE.route) { profileScreen() }
+      composable(Destination.LOGIN.route) { loginScreen() }
     }
   }
 }
@@ -67,5 +69,6 @@ enum class Destination(
   val contentDescription: String
 ) {
   HOME("Home", R.drawable.ic_home, "home", "Home page"),
-  PROFILE("Profile", R.drawable.ic_profile, "profile", "Perfil")
+  PROFILE("Profile", R.drawable.ic_profile, "profile", "Perfil"),
+  LOGIN("Login", R.drawable.ic_profile, "login", "Login Page")
 }
