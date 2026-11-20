@@ -1,7 +1,9 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.kotlin.serialization)
 }
+
 
 android {
     namespace = "pt.uptomar.dam2026.gotime"
@@ -37,6 +39,15 @@ android {
 }
 
 dependencies {
+  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.11.0")
+  implementation("org.jetbrains.kotlinx:kotlinx-serialization-core:1.11.0")
+  implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.11.0")
+
+  // Retrofit + OkHttp: pedidos HTTP à API REST (https://square.github.io/retrofit/)
+  implementation("com.squareup.retrofit2:retrofit:3.0.0")
+  implementation("com.squareup.retrofit2:converter-kotlinx-serialization:3.0.0")
+  implementation("com.squareup.okhttp3:okhttp:5.5.1")
+  implementation("com.squareup.okhttp3:logging-interceptor:5.5.1")
       implementation("androidx.credentials:credentials:1.7.0-alpha03")
     implementation("androidx.navigation:navigation-compose:2.10.2")
     implementation(platform(libs.androidx.compose.bom))
@@ -47,6 +58,8 @@ dependencies {
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.lifecycle.runtime.compose)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
